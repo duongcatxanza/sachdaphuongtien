@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fullscreen on Touch</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #333;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        #fullscreen {
+            padding: 20px;
+            background-color: #444;
+            border: 2px solid #555;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .fullscreen-enabled {
+            background-color: #222;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="fullscreen">
+        Tap to go Fullscreen
+    </div>
+
+    <script>
+        const fullscreenElement = document.getElementById('fullscreen');
+
+        // Check if fullscreen is supported
+        function isFullscreenSupported() {
+            return document.fullscreenEnabled || 
+                   document.webkitFullscreenEnabled || 
+                   document.mozFullScreenEnabled || 
+                   document.msFullscreenEnabled;
+        }
+
+        // Request fullscreen for an element
+        function requestFullscreen(element) {
+            if (element.requestFullscreen) {
+                element.requestFullscreen();
+            } else if (element.webkitRequestFullscreen) {
+                element.webkitRequestFullscreen();
+            } else if (element.mozRequestFullScreen) {
+                element.mozRequestFullScreen();
+            } else if (element.msRequestFullscreen) {
+                element.msRequestFullscreen();
+            }
+        }
+
+        // Handle touch event
+        fullscreenElement.addEventListener('touchstart', function() {
+            if (isFullscreenSupported()) {
+                requestFullscreen(document.documentElement); // Fullscreen the entire page
+                fullscreenElement.classList.add('fullscreen-enabled');
+                fullscreenElement.textContent = 'Tap to Exit Fullscreen';
+            }
+        });
+
+        // Listen for fullscreen change
+        document.addEventListener('fullscreenchange', function() {
+            if (!document.fullscreenElement) {
+                fullscreenElement.classList.remove('fullscreen-enabled');
+                fullscreenElement.textContent = 'Tap to go Fullscreen';
+            }
+        });
+    </script>
+
+</body>
+</html>

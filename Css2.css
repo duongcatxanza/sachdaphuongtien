@@ -1,0 +1,705 @@
+body{
+    background-color: rgb(255, 255, 255);
+    /* background: url('../bg\ html.png');
+    background-size: 100%;
+    background-position: fixed; */
+}
+#toanbo::-webkit-scrollbar {
+    display: none;
+}
+.container{
+    max-width: 1010px;
+    margin: 0px auto;
+}
+iframe{
+    height: 92vh;
+}
+
+#header{
+    /* position: fixed; */
+    width: 100%;
+    background-color: #487240;
+    height: auto;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+}
+#logosach{
+    padding: 9px 0px;
+}
+#logosach img{
+    max-width: 400px;
+    height: 37px;
+}
+#main-menu{
+    display:flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#main-menu li a{
+    color: rgb(0, 0, 0);
+    display:block;
+    padding: 8px 20px;
+    text-decoration: none;
+    font-family: Cambria, serif;
+    font-size: larger;
+}
+#main-menu ul.iframe{
+    position: absolute;
+    list-style: none;
+    padding: 5px 0px;
+    display: none;
+    right: 10%;
+}
+/* #main-menu li:hover ul.iframe{
+    display:block
+} */
+#header #switch-mode{
+    outline: none;
+    border: none;
+    background: none;
+    padding: 6px 0;
+    cursor: pointer;
+/* cái cursor: pointer ở trên giúp cho khi ấn con trỏ chuột vào đối tượng, con trỏ chuột sẽ thay đổi hình dạng thay vì con trỏ sẽ thành hình cái tay trỏ */
+}
+#header #switch-mode i{
+    font-size: 25px
+}
+/*css cho mục lục kiểu mới nhé*/
+#nutmucluc{
+    border:none;
+    background: none;
+    outline:none;
+    cursor: pointer;
+    padding: 15px;
+    padding-left: 115px;
+    padding-right: 25px;
+    position: relative;
+    color:#f8deb7;
+}
+#nutmucluc i{
+    font-size: 25px;
+}
+.submucluc{
+    position: absolute;
+    background-color: #ffeba9;
+    width: 290px;
+    right: 10%;
+    list-style: none;
+    padding: 5px 2px;
+    border-radius: 15px;
+    display: none;
+    width: 420px;
+    max-height: 600px;
+    overflow: scroll;
+} 
+.submucluc::-webkit-scrollbar {
+    width: 8px;               /* width of the entire scrollbar */
+  }
+  .submucluc::-webkit-scrollbar-track {
+    background: rgb(255, 255, 255);        /* color of the tracking area */
+  }
+  
+  .submucluc::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 126, 126);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+      /* creates padding around scroll thumb */
+  }
+
+#main-menu li:hover>ul.submucluc{
+    display: block;
+}
+.submuclucchuong1{
+    position: absolute;
+    background-color: #b5ffb1;
+    width: 320px;
+    right: 27%;
+    list-style: none;
+    padding: 5px 2px;
+    border-radius: 10px;
+    left: 295px;
+    top: 0;
+    display: none;
+    height: 425px;
+}
+.submuclucchuong2{
+    position: absolute;
+    background-color:#b5ffb1;
+    width: 320px;
+    right: 27%;
+    list-style: none;
+    padding: 5px 2px;
+    border-radius: 10px;
+    left: 295px;
+    top: 0;
+    height: 425px;
+    display: none;
+}
+.submuclucchuong3{
+    position: absolute;
+    background-color: #b5ffb1;
+    width: 320px;
+    right: 27%;
+    list-style: none;
+    padding: 5px 2px;
+    border-radius: 10px;
+    left: 295px;
+    top: 0;
+    height: 425px;
+    display: none;
+}
+.submuclucchuong4{
+    position: absolute;
+    background-color:  #fffd97;
+    width: 320px;
+    right: 27%;
+    list-style: none;
+    padding: 5px 2px;
+    border-radius: 10px;
+    left: 295px;
+    top: 0;
+    height: 425px;
+    display: none;
+}
+.submuclucchuong5{
+    position: absolute;
+    background-color:  #fffd97;
+    width: 320px;
+    right: 27%;
+    list-style: none;
+    padding: 5px 2px;
+    border-radius: 10px;
+    left: 295px;
+    top: 0;
+    height: 425px;
+    display: none;
+}
+.submuclucchuong6{
+    position: absolute;
+    background-color: #fffd97;
+    width: 320px;
+    right: 27%;
+    list-style: none;
+    padding: 0px 2px;
+    border-radius: 10px;
+    left: 295px;
+    top: 0;
+    height: 480px;
+    display: none;
+}
+.submuclucchuong7{
+    position: absolute;
+    background-color: #b5ffb1;
+    width: 320px;
+    right: 27%;
+    list-style: none;
+    padding: 5px 2px;
+    border-radius: 10px;
+    left: 295px;
+    top: 0;
+    height: 425px;
+    display: none;
+}
+#main-menu li:hover>ul.submuclucchuong1{
+    display: block;
+}
+#main-menu li:hover>ul.submuclucchuong2{
+    display: block;
+}
+#main-menu li:hover>ul.submuclucchuong3{
+    display: block;
+}
+#main-menu li:hover>ul.submuclucchuong4{
+    display: block;
+}
+#main-menu li:hover>ul.submuclucchuong5{
+    display: block;
+}
+#main-menu li:hover>ul.submuclucchuong6{
+    display: block;
+}
+#main-menu li:hover>ul.submuclucchuong7{
+    display: block;
+}
+#chuongmucluc{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 13px;
+    line-height: 1.3;
+    color: rgb(0, 65, 43);
+    padding-right: 10px;
+}
+.submucluc li a{
+    border-bottom: 1px solid #afafaf7a; 
+    width: 300px;
+    margin-left: 30px;
+}
+.submucluc li:hover>a{
+    border-bottom: 1px solid #ff5858;
+}
+.submucluc #chuongmucluc:hover>a{
+    color: #ff5858;
+}
+/* .submucluc li:last-child a{
+    border: none;
+} */
+/* .haschild{
+    position: relative;
+} */
+.submucluc>li.haschild1::after{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f105";
+    color:rgb(0, 95, 51);
+    position: absolute;
+    left: 90%;
+    top: 0px;
+    padding: 24px 0px;
+}
+.submucluc>li.haschild2::after{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f105";
+    color:rgb(0, 95, 51);
+    position: absolute;
+    left: 90%;
+    top: 60px;
+    padding: 24px 0px;
+}
+.submucluc>li.haschild3::after{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f105";
+    color:rgb(0, 95, 51);
+    position: absolute;
+    left: 90%;
+    top: 120px;
+    padding: 24px 0px;
+}
+.submucluc>li.haschild4::after{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f105";
+    color:rgb(0, 95, 51);
+    position: absolute;
+    left: 90%;
+    top: 180px;
+    padding: 24px 0px;
+}
+.submucluc>li.haschild5::after{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f105";
+    color:rgb(0, 95, 51);
+    position: absolute;
+    left: 90%;
+    top: 240px;
+    padding: 24px 0px;
+}
+.submucluc>li.haschild6::after{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f105";
+    color:rgb(0, 95, 51);
+    position: absolute;
+    left: 90%;
+    top: 300px;
+    padding: 24px 0px;
+}
+.submucluc>li.haschild7::after{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f105";
+    color:rgb(0, 95, 51);
+    position: absolute;
+    left: 90%;
+    top: 360px;
+    padding: 24px 0px;
+}
+.submucluc>li:hover.haschild1::after{
+    color:rgb(238, 74, 74);
+}
+.submucluc>li:hover.haschild2::after{
+    color:rgb(238, 74, 74);
+}
+.submucluc>li:hover.haschild3::after{
+    color:rgb(238, 74, 74);
+}
+.submucluc>li:hover.haschild4::after{
+    color:rgb(238, 74, 74);
+}
+.submucluc>li:hover.haschild5::after{
+    color:rgb(238, 74, 74);
+}
+.submucluc>li:hover.haschild6::after{
+    color:rgb(238, 74, 74);
+}
+.submucluc>li:hover.haschild7::after{
+    color:rgb(238, 74, 74);
+}
+
+
+
+#header #heart i{
+    font-size: 23px;
+    display: block;
+    padding: 15px 4px;
+
+}
+#header #heart{
+    outline: none;
+    border: none;
+    background: none;
+}
+.heartout{
+    background: transparent;
+    cursor: pointer;
+    color: rgb(248, 223, 185);
+}
+#styleaa{
+    position: relative;
+    border: none;
+    outline: none;
+    background: none;
+}
+#styleaa i{
+    font-size: 23px;
+    color: #f8deb7;
+    cursor: pointer;
+    display: block;
+    padding: 15px;
+}
+/* #header #sangtoi{
+    outline: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+#header #sangtoi i{
+    font-size: 22px;
+    display: block;
+    padding: 23px 10px;
+    color:rgb(92, 92, 92);
+} */
+#infor{
+    outline: none;
+    border: none;
+    background: none;
+    padding: 7px 0px;
+}
+#infor i{
+    font-size: 23px;
+    display: block;
+    padding: 0px 0px;
+    color: #f8deb7;
+    position: relative;
+}
+.informore{
+    position: absolute;
+    list-style: none;
+    right: 6%;
+    display: none;
+    padding: 0px 0px;
+}
+#main-menu li:hover ul.informore{
+    display: block;
+}
+#music{
+    border:none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    padding: 16px 10px ;
+}
+#header #music i{
+    font-size: 22px;
+    color: #f8deb7;
+    padding: 0px 0px;
+}
+.main_music{
+    position: relative;
+}
+.sub_music{
+    position: absolute;
+    background-color: #fceec2;
+    border-radius: 20px;
+    list-style:none;
+    display:none;
+    width: 220px;
+    font-family:Arial, sans-serif;
+    font-size: 15px;
+    color:#fceec2;
+    
+}
+#header li:hover ul.sub_music{
+    display: block;
+}
+audio{
+    height: 30px;
+    width: 200px;
+}
+audio::-webkit-media-controls-panel{
+   background-color: rgb(126, 206, 162); 
+   width: 20px;
+}
+audio::-webkit-media-controls-play-button{
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 50px;
+}
+.beodat{
+    padding: 5px;
+}
+.final{
+    padding: 7px;
+}
+#fullmanhinh{
+    border:none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    padding: 16px ;
+}
+#fullmanhinh i{
+    font-size: 21px;
+    color: #f8deb7;
+}
+#tablon{
+    background-color:#ffeba9;
+    width: 210px;
+    position: absolute;
+    height: 300px;
+    right: 15%;
+    border-radius: 20px;
+}
+#tabnen{
+    /* background-color: rgba(248, 255, 252, 0.849); */
+    /* position: absolute; */
+    /* width: 205px; */
+    /* height: 300px; */
+    right: 0px;
+    display: flex;
+    list-style: none;
+}
+#nenxanh{
+    cursor: pointer;
+    padding: 0px 13px;
+    margin-top: 15px;
+    font-size: 30px;
+    border: none;
+    background: none;
+    color: #ff8686;
+}
+#nenxanhla{
+    cursor: pointer;
+    padding: 0px 10px;
+    margin-top: 15px;
+    font-size: 30px;
+    border: none;
+    background: none;
+    color: #ffed4a;
+}
+#nentrang{
+    cursor: pointer;
+    padding: 0px 10px;
+    margin-top: 15px;
+    font-size: 30px;
+    border: none;
+    background: none;
+    color: rgb(255, 255, 255);
+}
+#nenden{
+    cursor: pointer;
+    margin-right: 45px;
+    padding: 0px 10px;
+    margin-top: 15px;
+    font-size: 30px;
+    border: none;
+    background: none;
+    color: #000000;
+}
+#tabstylene{
+    display: none;
+}
+#header li:hover ul#tabstylene{
+    display: block;
+}
+#hrne{
+    color: rgba(172, 172, 172, 0.884);
+    border: 1px solid;
+    width: 180px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#thehr{
+    display: flex;
+    position: absolute;
+    list-style: none;
+    margin-top: 3px;
+}
+#thehr1{
+    display: flex;
+    position: absolute;
+    list-style: none;
+    margin-top: 0px;
+    top: 37%;
+}
+#tabcochu{
+    display: flex;
+    /* position: absolute; */
+    list-style: none;
+    margin-top: 0px;
+    margin-right: 90px;
+}
+#co1{
+    cursor: pointer;
+    padding: 20px 18px;
+    margin-top: 10px;
+    font-size: 20px;
+    border: none;
+    background: none;
+}
+#co2{
+    cursor: pointer;
+    padding: 15px 13px;
+    margin-top: 10px;
+    font-size: 25px;
+    border: none;
+    background: none;
+}
+#co3{
+    cursor: pointer;
+    padding: 13px 15px;
+    margin-top: 10px;
+    font-size: 30px;
+    border: none;
+    background: none;
+}
+#co4{
+    cursor: pointer;
+    padding: 9px 18px;
+    margin-top: 10px;
+    font-size: 35px;
+    border: none;
+    background: none;
+}
+#tabkieuchu{
+    position: absolute;
+    list-style: none;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+#kieu1{
+    color: black;
+    margin-bottom: 8px;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+    font-size: 19px;
+    border: none;
+    background: none;
+}
+#kieu2{
+    margin-bottom: 8px;
+    font-family: 'Times New Roman';
+    cursor: pointer;
+    font-size: 19px;
+    border: none;
+    background: none;
+}
+#kieu3{
+    margin-bottom: 8px;
+    font-family: Cambria, serif;
+    cursor: pointer;
+    font-size: 19px;
+    border: none;
+    background: none;
+}
+/* @font-face{
+    src: url("../BOOKOS.TTF");
+    font-family:"BOOKOS";
+} */
+#kieu4{
+    margin-bottom: 8px;
+    font-family:monospace;
+    cursor: pointer;
+    font-size: 19px;
+    border: none;
+    background: none;
+}
+@font-face{
+    src: url("../calibri.ttf");
+    font-family:"calibri";
+}
+#kieu5{
+    margin-bottom: 8px;
+    font-family:"calibri";
+    cursor: pointer;
+    font-size: 19px;
+    border: none;
+    background: none;
+}
+
+
+
+
+
+#toggle{
+    display: none;
+    color:#fceec2;
+    text-align: right;
+    font-size: 30px;
+    padding: 5px;
+    cursor: pointer;
+    margin-right: 3%;
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    header{
+        width: 100%;
+        display: flex;
+    }
+    #main-menu{
+        flex-direction:row;
+        justify-content: space-between;
+        text-align: center;
+        position: relative;
+        
+    }
+    #logosach img{
+        width: 300px;
+        padding: 0px;
+        display: none;
+    }
+    .submucluc{
+        right: 0%;
+        height: 40vh;
+        width: 100%;
+    }
+    /* #heart{
+        position: relative;
+        
+    }
+    #styleaa{
+        position: relative;
+    } */
+    #nutmucluc{
+        padding: 15px 10px;
+    }
+    #toggle{
+        display: block;
+    }
+    nav{
+        display: none;
+    }
+    iframe{
+        width: 100%;
+        
+    }
+
+
+}

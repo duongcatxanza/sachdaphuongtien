@@ -1,0 +1,34 @@
+/*Css cho giao diện tối*/
+body.dark{
+    background-color: black;
+    color:rgb(255, 255, 255);
+}
+body.dark #nut1{
+    color:rgb(255, 255, 255);
+}
+body.dark #nut2{
+    color:rgb(255, 255, 255);
+}
+body.dark #darkmode {
+    color:rgb(255, 255, 255);
+}
+/*giao diện màu xanh nước biển*/
+body.blue{
+    background-color: #a9f7c0c4;
+}
+body.blue #bluemode {
+    color:rgb(255, 255, 255);
+}
+/*giao diện màu xanh lá cây*/
+body.green{
+    background-color: rgba(102, 223, 138, 0.658);
+    /* background: url('../bg\ html\ \(1\).png');
+    background-size: 100%;
+    background-position: fixed; */
+}
+body.green #custommode1 {
+    color:rgb(255, 255, 255);
+}
+body.dark #header{
+    background-color: black;
+}

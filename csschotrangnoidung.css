@@ -1,0 +1,113 @@
+
+body{
+    background-color: rgb(255, 255, 255);
+    /* background: url('../ne1.png'); */
+    background-size: 100%;
+    background-position: fixed;
+    /* background-repeat: no-repeat;
+    background-attachment: fixed; */
+
+}
+body#text1{
+    background: url('/fgf.png');
+    background-size: 100%;
+    background-position: fixed;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.lienketngoai{
+    color:aqua;
+    font-family:arial;
+}
+#lienketngoaicss{
+    border-style: groove;
+    color: rgb(255, 47, 47);
+}
+#tablecan{
+    align-items: center;
+}
+.container{
+    width: 960px;
+    margin: 0px auto;
+}
+.video{
+    padding: 0 200px;
+    
+}
+.thanhtrai{
+    position: fixed;
+    bottom: 50%;
+    left: 8%;
+   
+}
+.thanhphai{
+    position: fixed;
+    left: 90%;
+    bottom: 50%;  
+}
+#nut1{
+    color:rgba(23, 99, 46, 0.658);
+    outline: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+#nut1 i{
+    font-size: 35px;
+}
+#nut2{
+    color:rgba(23, 99, 46, 0.658);
+    outline: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+#nut2 i{
+    font-size: 35px;
+}
+.anvo{
+    position: fixed;
+    left: 90%;
+    bottom: 70%;  
+}
+#darkmode{
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: none;
+    
+}
+#darkmode i{
+    font-size: 25px
+}
+.anvo2{
+    position: fixed;
+    left: 90%;
+    bottom: 76%;
+}
+#bluemode{
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: none;
+    color: #a9f7c0c4;
+}
+#bluemode i{
+    font-size: 25px
+}
+.anvo3{
+    position: fixed;
+    left: 90%;
+    bottom: 82%;
+}
+#custommode1{
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: none;
+    color: rgba(37, 122, 63, 0.658);
+}
+#custommode1 i{
+    font-size: 25px;
+}
+

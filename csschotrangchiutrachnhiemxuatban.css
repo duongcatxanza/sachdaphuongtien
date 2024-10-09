@@ -1,0 +1,88 @@
+body{
+    /* background: url('../Fileanhchogiaodien/NEN2.png'); */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-y: -100px;
+}
+#textmucluc{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12px;
+    color:#db2e2e;
+    text-align:center;
+    margin-top: 20px;
+    line-height: 1.5;
+}
+hr{
+    width: 340px;
+    border: 1px solid rgb(0, 58, 22);
+    margin-top: 16px;
+}
+#container li {
+    list-style: none;
+}
+#khoi1{
+    margin-top: 35px;
+    line-height: 2;
+}
+#khoi2{
+    margin-top: 35px;
+    line-height: 2;
+}
+#khoi3{
+    margin-top: 35px;
+    line-height: 2;
+}
+#khoi4{
+    margin-top: 35px;
+    line-height: 2;
+}
+#khoi5{
+    margin-top: 35px;
+    line-height: 2;
+}
+#khoicuoi{
+    margin-top: 55px;
+    line-height: 2;
+    font-size: 16px;
+}
+#nut1 i{
+    font-size: 45px;
+}
+#nut1{
+    border:none;
+    background:none;
+    color:#df4141a8;
+    cursor: pointer;
+}
+.thanhphai{
+    position: fixed;
+    left: 80%;
+    bottom: 40%;
+}
+#nut2 i{
+    font-size:45px;
+}
+#nut2{
+    border: none;
+    background: none;
+    color: #df4141a8;
+    cursor: pointer;
+}
+.thanhtrai{
+    position:fixed;
+    right:80%;
+    bottom:40%;
+}
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: rgb(255, 255, 255);        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(235, 145, 145);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+      /* creates padding around scroll thumb */
+  }

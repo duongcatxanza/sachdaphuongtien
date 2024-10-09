@@ -1,0 +1,170 @@
+.tabmusic{
+    position: absolute;
+    width: 260px;
+    background-color:#ffeba9;
+    right: 6%;
+    border-radius: 10px;
+    height: 380px;
+    display: none;
+}
+#header li:hover .tabmusic{
+    display: block;
+}
+.tennhac{
+    margin-top: 22px;
+    font-weight: bold;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    color:rgb(238, 72, 72);
+    font-size: 16px;
+}
+#dianhac{
+    margin: 30px auto;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    background-image: url('../Fileanhchogiaodien/dia1.png');
+    background-size: cover;
+    animation: rotate 20s linear infinite;
+    animation-play-state: paused;
+    position: relative;
+    display: block;
+    box-shadow:  0 0 0 10px rgba(51, 51, 51, 0.08);
+}
+
+#dianhac.playne{
+    animation-play-state: running;
+}
+#dianhac::before{
+    position: absolute;
+    content: '';
+    top: 47%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background:  #fffab2;
+}
+.thanhdieuhuongnhac{
+    margin-left: 10px;
+    width: 240px;
+    height: 5px;
+    border-radius: 10px;
+    background:  #ffa8a8;
+    cursor: pointer;
+    overflow: hidden;
+}
+.thanhdieuhuongnhac::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 10px;
+    height: 20px;
+    background: rgb(248, 156, 156);
+    box-shadow:  -260px 0 0 260px #599470;
+}
+.slidenhac{
+    width: 100%;
+}
+.timehientai,
+.timecuanhac{
+    font-size: 17px;
+}
+.timecuanhac{
+    position: absolute;
+    right: 10px;
+}
+.timehientai{
+    margin-left: 10px;
+}
+.nutdieukhiennhac{
+    width: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+#nutplay{
+    position: relative;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: #89d6a7;
+    border:none;
+}
+#nutplay span{
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 30px;
+    border-radius: 2px;
+    background: #599470;
+    transition: .5s;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+#nutplay span:nth-child(2){
+    left: 55%;
+    transform-origin: center;
+}
+#nutplay.pause span:nth-child(2){
+    transform: translateY(-50%) scaleY(0);
+}
+#nutplay.pause span:nth-child(1){
+    width: 35%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+    border-radius: 0;
+    clip-path: polygon(0 0, 100% 50%, 100% 50%, 0% 100%);
+}
+#nutplay.pause{
+    animation: pulse 2s linear infinite;
+}
+
+@keyframes pulse{
+    0%{
+        box-shadow: 0;
+    }
+    50%{
+        box-shadow: 0 0 0 5px rgb(255, 255, 255, 0.1);
+    }
+    100%{
+        box-shadow: 0 0 0 5px rgb(255, 255, 255, 0.4);
+    }
+}
+.nutquaylai{
+    width: 30px;
+    height: 30px;
+    background: #89d6a7;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.nutchuyenbai{
+    width: 30px;
+    height: 30px;
+    background: #89d6a7;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,37 @@
+#nut1 i{
+    font-size: 45px;
+}
+#nut1{
+    border:none;
+    background:none;
+    color:#17632ea8;
+    cursor: pointer;
+}
+.thanhphai{
+    position: fixed;
+    left: 90%;
+    bottom: 50%;
+}
+#backtop i{
+    font-size: 41px;
+    color: #17632ea8;
+    cursor: pointer;
+}
+#backtop{
+    position: fixed;
+    left: 90.1%;
+    bottom: 30px;
+}
+
+
+
+
+#nut4 i{
+    font-size: 45px;
+}
+#nut4{
+    border:none;
+    background:none;
+    color:#ffffff;
+    cursor: pointer;
+}
